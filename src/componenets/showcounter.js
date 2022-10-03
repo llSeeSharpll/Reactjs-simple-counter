@@ -8,7 +8,7 @@ function ShowCounter() {
     setIsShown((current) => !current);
   };
   return (
-    <div>
+    <div className="text-center mt-5">
       <button className="control__btn" onClick={showhidden}>
         Show hidden counter
       </button>

@@ -4,7 +4,7 @@ import ShowCounter from './componenets/showcounter';
 
 function App() {
   return (
-    <div className="App text-center mt-5">
+    <div className="App">
       <ShowCounter />
     </div>
   );
