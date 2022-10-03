@@ -1,19 +1,11 @@
 import './App.css';
-import { useState } from 'react';
 import React from 'react';
-import Counter from './componenets/counter';
+import ShowCounter from './componenets/showcounter';
 
 function App() {
-  const [isShown, setIsShown] = useState(false);
-  const showhidden = () => {
-    setIsShown((current) => !current);
-  };
   return (
     <div className="App text-center mt-5">
-      <button className="control__btn" onClick={showhidden}>
-        Show hidden counter
-      </button>
-      {isShown ? <Counter /> : null}
+      <ShowCounter />
     </div>
   );
 }
