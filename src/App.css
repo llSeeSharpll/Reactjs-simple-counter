@@ -35,10 +35,15 @@
   transition: 0.2s ease-in-out;
 }
 
-.control__btn:hover {
+.control__btn:hover:enabled {
   background-color: rgb(16, 0, 54);
   color: rgb(255, 255, 255);
   border: 1px solid rgb(16, 0, 54);
+}
+.control__btn:disabled,
+.control__btn[disabled] {
+  border: 1px solid #999999;
+  color: #666666;
 }
 
 .reset {
@@ -52,8 +57,13 @@
   transition: 0.2s ease-in-out;
 }
 
-.reset:hover {
+.reset:hover:enabled {
   background-color: rgb(16, 0, 54);
   color: rgb(255, 255, 255);
   border: 1px solid rgb(16, 0, 54);
+}
+.reset:disabled,
+.reset[disabled] {
+  border: 1px solid #999999;
+  color: #666666;
 }
